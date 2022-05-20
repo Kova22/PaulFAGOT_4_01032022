@@ -538,8 +538,10 @@ button {
 
 a[data-lightbox] {
     position: relative;
-    display: block;
+    display: flex;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 a[data-lightbox]:hover::before {
@@ -900,6 +902,9 @@ h4 {
 }
 
 @media (max-width: 767px) {
+    .portfolio-thumb {
+        display: inline-block;
+    }
     .page-container {
         overflow-x: hidden;
         position: relative;
